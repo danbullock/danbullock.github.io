@@ -14,14 +14,15 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 50px;
-  background: rgba(174, 129, 255, .5);
+  background: #BC94DD;
   padding: 5px 40px;
   box-sizing: border-box;
+  box-shadow: 1px 1px 1px 1px #5D5F60;
 }
 
 .header-h {
@@ -32,6 +33,7 @@ body {
 }
 
 .post {
+  margin-top: 50px;
   width: 100%;
   padding: 20px 40px;
   box-sizing: border-box;
@@ -41,11 +43,13 @@ body {
   font-size: 3em;
   font-weight: 100;
   margin: 0 0 40px 0;
+  text-align: center;
 }
 
 .post-img {
   width: 50%;
   margin: 0 25%;
+  box-shadow: 3px 3px 5px 2px #5D5F60
 }
 
 .post-subh {
@@ -84,12 +88,13 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0px;
   right: 0px;
   height: 30px;
-  background: rgba(174, 129, 255, .5);
+  background: #BC94DD;
+  box-shadow: -1px -1px 1px 1px #5D5F60;
 }
 
 .footer a {
