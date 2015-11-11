@@ -1,105 +1,215 @@
+/* General */
 html,
 body {
-  width: 100%;
-  margin: 0;
-  position: relative;
-  box-sizing: border-box;
-  background: #BBBBBB;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
-body {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 100;
-  color: #222222;
+.container {
+  width: 95%;
 }
+/* Header */
 
 .header {
-  position: fixed;
+  background-color: rgba(34, 34, 34, 1);
+  border-bottom: 1px solid rgba(34, 34, 34, 1);
+  font-weight: 200;
+  font-size: 17px;
+  padding: 15px;
+}
+
+.header h1 {
+  color: #898989;
+  font-weight: 100;
+  float: left;
+  margin: 5px;
+}
+
+.headerAlt {
+  color: rgba(70,138,213,1);
+}
+/* Menu */
+
+.header .menu {
+  float: right;
+  list-style: none;
+  margin: 12px;
+}
+
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a {
+  color: #898989;
+}
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.slide {
+  display: none;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  height: 50px;
-  background: #BC94DD;
-  padding: 5px 40px;
-  box-sizing: border-box;
-  box-shadow: 1px 1px 1px 1px #5D5F60;
-}
-
-.header-h {
-  margin: 0;
-  font-size: 2em;
-  color: white;
-  font-weight: 100;
-}
-
-.post {
-  margin-top: 50px;
   width: 100%;
-  padding: 20px 40px;
-  box-sizing: border-box;
+  height: 100%;
 }
 
-.post-h {
-  font-size: 3em;
-  font-weight: 100;
-  margin: 0 0 40px 0;
-  text-align: center;
+.active-slide {
+  display: block;
 }
 
-.post-img {
-  width: 50%;
-  margin: 0 25%;
-  box-shadow: 3px 3px 5px 2px #5D5F60
+#slide1 {
+  background: url(/images/DJI_0041.JPG)no-repeat center center fixed;
+  background-size: 100%;
 }
 
-.post-subh {
-  text-align: center;
-  font-size: 2em;
-  font-weight: 100;
+#slide2 {
+  background: url(/images/DJI_0014.JPG)no-repeat center center fixed;
+  background-size: 100%;
 }
 
-.post-list-h {
-  font-size: 1.2em;
-  text-decoration: underline;
+#slide3 {
+  background: url(/images/DJI_1154.JPG)no-repeat center center fixed;
+  background-size: 100%;
+}
+
+#slide4 {
+  background: url(/images/FlyBoard%20Native.jpg)no-repeat center center fixed;
+  background-size: 100%;
+}
+
+.slide-img {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-copy h1 {
+  color: #363636;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
+  font-size: 40px;
+  margin-top: 105px;
+  margin-bottom: 0px;
 }
 
-.budget-list {
-  margin-left: 20px;
-  padding: 10px;
+.slide-copy h2 {
+  color: #b7b7b7;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 5px;
 }
 
-.budget-item {
-  padding: 4px
+.slide-copy p {
+  color: #959595;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
 }
 
-.post-p-list {
+.slide-img {
+  text-align: right;
+}
+/* Slide feature */
+
+.slide-feature {
+  text-align: center;
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png');
+  height: 470px;
+}
+
+.slide-feature img {
+  margin-top: 112px;
+  margin-bottom: 28px;
+}
+
+.slide-feature a {
+  display: block;
+  color: #6fc5e0;
+  font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.slider-nav {
+  position: relative;
+  bottom: 45px;
+  text-align: center;
+  margin-top: 0px;
+  z-index: 100;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
   list-style: none;
-  width: 70%;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
-.post-p-list-item {
-  padding: 2px 10px;
-  background: #eee;
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
 }
 
-.pullright {
-  float: right;
+.slider-dots li.active-dot {
+  color: #363636;
+}
+/* App links */
+
+.get-app {
+  list-style: none;
+  padding-bottom: 9px;
+  padding-left: 0px;
+  padding-top: 9px;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0px;
-  right: 0px;
-  height: 30px;
-  background: #BC94DD;
-  box-shadow: -1px -1px 1px 1px #5D5F60;
+.get-app li {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
-.footer a {
-  text-decoration: none;
-  color: white;
-  float: right;
-  padding: 5px
+.get-app img {
+  height: 40px;
 }
