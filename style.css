@@ -258,7 +258,7 @@ header .menu {
   margin: 0 1.5%;
   width: 30%;
   height: 100%;
-  display: inline-block;
+  float: left;
   background: rgba(27, 27, 29, .5);
   padding: 20px;
   font-size: 15px;
