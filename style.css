@@ -1,0 +1,302 @@
+/* General */
+
+html,
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  z-index: 10;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  font-weight: 200;
+}
+/* Header */
+
+header {
+  background-color: rgba(34, 34, 34, .8);
+  font-weight: 200;
+  font-size: 17px;
+  padding: 15px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0px 2px 20px rgba(34, 34, 34, 1);
+}
+
+header h1 {
+  color: #898989;
+  font-weight: 100;
+  float: left;
+  margin: 5px;
+}
+
+.headerAlt {
+  color: rgba(70, 138, 213, 1);
+}
+/* Menu */
+
+header .menu {
+  float: right;
+  list-style: none;
+  margin: 12px;
+}
+
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a {
+  color: #898989;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: rgba(70, 138, 213, 1);
+}
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+  display: block;
+}
+
+#slide1 {
+  background: url(/images/DJI_0041.JPG)no-repeat center center;
+  background-size: 100%;
+}
+
+#slide2 {
+  background: url(/images/DJI_0014.JPG)no-repeat center center;
+  background-size: 100%;
+}
+
+#slide3 {
+  background: url(/images/DJI_1154.JPG)no-repeat center center;
+  background-size: 100%;
+}
+
+#slide4 {
+  background: url(/images/FlyBoard%20Native.jpg)no-repeat center center;
+  background-size: 100%;
+}
+
+.slide-img {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-copy h1 {
+  color: #363636;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 105px;
+  margin-bottom: 0px;
+}
+
+.slide-copy h2 {
+  color: #b7b7b7;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 5px;
+}
+
+.slide-copy p {
+  color: #959595;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+.slide-img {
+  text-align: right;
+}
+/* Slide feature */
+
+.slide-feature {
+  text-align: center;
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png');
+  height: 470px;
+}
+
+.slide-feature img {
+  margin-top: 112px;
+  margin-bottom: 28px;
+}
+
+.slide-feature a {
+  display: block;
+  color: #6fc5e0;
+  font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.slider-nav {
+  position: relative;
+  bottom: 45px;
+  text-align: center;
+  margin: 0 0;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
+.welcome {
+  margin-top: -43px;
+  padding: 40px 0;
+  height: 400px;
+  font-size: 25px;
+  background-color: #CECFCF;
+  box-shadow: 2px 2px 5px black;
+  z-index: 100;
+}
+
+.welcomeLeft {
+  height: 100%;
+  width: 45%;
+  text-shadow: 1px 1px 1px #eeeeee;
+  text-align: center;
+  float: left;
+  display: flex;
+  align-content: center;
+}
+
+.welcomeLeft p {
+  margin: auto;
+}
+
+.welcomeRight {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.welcomeRight img {
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 5px #1B1B1D;
+}
+
+.motos {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(71, 72, 75, 1);
+  color: #CECFCF;
+  padding: 20px 0;
+  z-index: 10;
+  box-shadow: 0px 2px 15px black;
+}
+
+.moto {
+  text-align: center;
+  margin: 0 1.5%;
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  background: rgba(27, 27, 29, .5);
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.motoH {
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+footer {
+  height: 100px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+  background: rgba(93, 95, 96, .3);
+  box-sizing: border-box;
+}
+
+.contactInfo {
+  float: left;
+  height: 100%;
+  width: 30%;
+  margin: 0 1.5%;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footSpace {
+  height: 100px;
+  z-index: -10
+}
