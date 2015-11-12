@@ -251,6 +251,7 @@ header .menu {
   padding: 20px 0;
   z-index: 10;
   box-shadow: 0px 2px 15px black;
+  box-sizing: border-box;
 }
 
 .moto {
@@ -264,6 +265,7 @@ header .menu {
   font-size: 15px;
   border-radius: 3px;
   box-shadow: 2px 2px 10px black;
+  box-sizing: border-box;
 }
 
 .motoH {
